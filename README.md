@@ -2,6 +2,14 @@
 
 ## 1. Introduction
 This repository contains source code for paper ["Towards early detection of adverse drugreactions: combining pre-clinical drug structuresand post-market safety reports"](https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-019-0999-1) (accepted by **_BMC Medical Informatics andDecision Making_**). 
+
+Please kindly cite the paper if you use the code, datasets or any results in this repo or in the paper:
+```
+Liu, R., Zhang, P. Towards early detection of adverse drug reactions: combining pre-clinical 
+
+drug structures and post-market safety reports. BMC Med Inform Decis Mak 19, 279 (2019) doi:10.1186/s12911-019-0999-1
+```
+
 In this paper, we propose a label propagation framework to enhance drug safety signals by combining pre-clinical drug chemical structures with post-marketing safety reports from [FDA Adverse Event Reporting System (FAERS)](https://open.fda.gov/data/faers/). 
 
 We apply the label propagation framework to four popular signal detection algorithms (PRR, ROR,MGPS, BCPNN) and find that our proposed framework generates more accurate drug safety signals than the corresponding baselines.
@@ -30,9 +38,3 @@ python run.py --input SignalScoresSource --method PRR05 --year all --eval_metric
 - --eval_metrics, evaluation metrics (i.e., AUC, AUPR, Precision, Recall, etc.)
 - --split, whether to split entire dataset into validation set and testing set.
 - --output, output file.
-
-## 5. Citation
-Please kindly cite the paper if you use the code, datasets or any results in this repo or in the paper:
-```
-Liu, R., Zhang, P. Towards early detection of adverse drug reactions: combining pre-clinical drug structures and post-market safety reports. BMC Med Inform Decis Mak 19, 279 (2019) doi:10.1186/s12911-019-0999-1
-```
